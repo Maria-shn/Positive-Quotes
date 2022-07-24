@@ -33,8 +33,7 @@ h1, h2 {
 
 img {
     width: 15rem;
-    transition: all 0.5s;
-    transform-origin: left;
+    z-index: 1;
 }
 
 .door {
@@ -50,12 +49,18 @@ img {
     position: relative;
 }
 
-#output, #output1, #output2 {
+#output1, #output2, #output3 {
+    color: black;
     position: absolute;
-    top: 25rem;
-    left: 1.875rem;
+    top: 15rem;
+    left: 2.5rem;
+    max-width: 14rem;
     z-index: 0;
-    max-width: 15rem;
+}
+
+#output1 {
+    width: 240px;
+    height: 490px;
 }
 
 footer > a {
