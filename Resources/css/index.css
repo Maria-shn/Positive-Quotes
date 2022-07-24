@@ -19,7 +19,7 @@ h1, h2 {
 }
 .quoteTypes > div {
     display: inline-grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto ;
     grid-template-rows: auto auto 30rem;
     align-items: end;
     justify-items: center;
@@ -52,16 +52,15 @@ img {
 #output1, #output2, #output3 {
     color: black;
     position: absolute;
-    top: 15rem;
-    left: 2.5rem;
+    top: 12rem;
+    left: 4rem;
     max-width: 14rem;
+    
     z-index: 0;
 }
 
-#output1 {
-    width: 240px;
-    height: 490px;
-}
+
+
 
 footer > a {
     color: white;

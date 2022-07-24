@@ -19,7 +19,7 @@ let religiousArray = ["'So do not fear, for I am with you; do not be dismayed, f
 "'Humble yourselves, therefore, under the mighty hand of God so that at the proper time He may exalt you, casting all your anxieties on Him, because He cares for you.' - 1 Peter 5:6-7",
 "'Thou shalt not hate thy brother in thy heart . . . Thou shalt not take vengeance . . . I am the Lord.' - Leviticus 19:17-18 ( JPS Tanakh (1917) )",
 "'Thou shalt love thy neighbour as thyself: I am the Lord.' - Leviticus 19:18 ( JPS Tanakh (1917) )",
-"'Y ou shall not take vengeance!' - Leviticus (Vayikra) 19:18",
+"'You shall not take vengeance!' - Leviticus (Vayikra) 19:18",
 "'And do not mix the truth with falsehood or conceal the truth while you know [it].' - Ayat 42",
 "'And We have not created the heavens and earth and that between them except in truth. And indeed, the Hour is coming; so forgive with gracious forgiveness.' - Surah Hijr Verse 85",
 "'…every soul may be recompensed according to that for which it strives.' - Surah Ta Ha Ayat 20"
@@ -29,38 +29,33 @@ const output1 = document.getElementById("output1");
 const output2 = document.getElementById("output2");
 const output3 = document.getElementById("output3");
 
-const door1 = document.getElementById("door1");
-const door2 = document.getElementById("door2");
-const door3 = document.getElementById("door3");
 
 const doorframe = document.getElementsByClassName("doorframe");
 
 
 
-output1.addEventListener("mouseenter", function (){
+doorframe[0].addEventListener("click", function (){
     output1.innerHTML = positiveArray[Math.floor(Math.random()*(positiveArray.length))];
-    if(output1.hidden = true) {
-        output1.hidden = false;
-    };
+    output1.hidden = false;
 });
-door1.addEventListener("mouseleave", function (){
+doorframe[0].addEventListener("mouseout", function (){
     output1.hidden = true;
 });
 
-door2.addEventListener("mouseover", function (){
+doorframe[1].addEventListener("click", function (){
     output2.innerHTML = motivationalArray[Math.floor(Math.random()*(motivationalArray.length))];
     output2.hidden = false;
 });
 
-door2.addEventListener("mouseout", function (){
+doorframe[1].addEventListener("mouseout", function (){
     output2.hidden = true;
 });
 
-door3.addEventListener("mouseover", function (){
+doorframe[2].addEventListener("click", function (){
     output3.innerHTML = religiousArray[Math.floor(Math.random()*(religiousArray.length))];
     output3.hidden = false;
 });
 
-door3.addEventListener("mouseout", function (){
+doorframe[2].addEventListener("mouseout", function (){
     output3.hidden = true;
 })
