@@ -1,0 +1,67 @@
+* {
+    font-family: 'Merienda', cursive;
+}
+
+body {
+    background-image: url("../brickwallopacity.png");
+    background-size: 25rem auto;
+    color: white;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.quoteTypes {
+    display: flex;
+    justify-content: space-around;
+}
+.quoteTypes > div {
+    display: inline-grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto 30rem;
+    align-items: end;
+    justify-items: center;
+}
+.doorframe {
+    perspective: 1000px;
+    border: thick solid black;
+    display: flex;
+    background-color: bisque;
+}
+
+img {
+    width: 15rem;
+    z-index: 1;
+}
+
+.door {
+    transition: all 0.5s;
+    transform-origin: left;
+}
+
+.doorframe:hover img {
+    transform: rotateY(-98deg);
+}
+
+.quoteTypes > div {
+    position: relative;
+}
+
+#output1, #output2, #output3 {
+    color: black;
+    position: absolute;
+    top: 12rem;
+    left: 4rem;
+    max-width: 14rem;
+    
+    z-index: 0;
+}
+
+
+
+
+footer > a {
+    color: white;
+}
